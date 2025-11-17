@@ -1,4 +1,3 @@
-using Adapter_Pattern;
 using System;
 
 public class ServeurWeb

@@ -1,4 +1,3 @@
-using Bridge_Pattern;
 using System;
 
 public class Utilisateur

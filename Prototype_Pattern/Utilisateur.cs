@@ -1,4 +1,3 @@
-using Prototype_Pattern;
 using System;
 
 public class Utilisateur
