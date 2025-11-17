@@ -4,10 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public interface Document
+public interface ComposantGraphiqueVehicule
 {
-    void setContenu(string contenu);
-
-    void dessine();
-    void imprime();
+    void affiche();
 }

@@ -1,5 +1,4 @@
 using System;
-
 public class AutomobileElectricite : Automobile
 {
   public AutomobileElectricite(string modele, string

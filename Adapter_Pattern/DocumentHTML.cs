@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 public class DocumentHTML : Document
 {
+    private string contenu { get; set; } = string.Empty;
     protected string getContenu()
     {
         return this.contenu;
     }
 
-    public override void setContenu(string contenu)
+    public void setContenu(string contenu)
     {
         this.contenu = contenu;
     }
-    public override void dessine()
+    public void dessine()
     {
         Console.WriteLine("Affichage du document HTML : " + contenu);
     }
 
-    public override void imprime()
+    public void imprime()
     {
         Console.WriteLine("Impression du document HTML  :" + contenu);
     }

@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 public class DocumentPDF : Document
 {
-    public override void setContenu(string contenu)
+    private string contenu { get; set; } = string.Empty;
+    protected ComposantPDF composantPDF;
+    public void setContenu(string contenu)
     {
         this.contenu = contenu;
     }
-    public override void dessine()
+    public void dessine()
     {
         Console.WriteLine("Affichage du document PDF : " + contenu);
     }
 
-    public override void imprime()
+    public void imprime()
     {
         Console.WriteLine("Impression du document PDF  :" + contenu);
     }
