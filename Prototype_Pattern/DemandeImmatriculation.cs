@@ -7,14 +7,6 @@ using System.Threading.Tasks;
 
 public class DemandeImmatriculation : Document
 {
-    public override Document duplique()
-    {
-        return new DemandeImmatriculation
-        {
-            Informations = this.Informations
-        };
-    }
-
     public override Document imprime()
     {
         Console.WriteLine($"Impression de la demande d'immatriculation : {Informations}");
@@ -24,12 +16,6 @@ public class DemandeImmatriculation : Document
     public override Document affiche()
     {
         Console.WriteLine($"Affichage de la demande d'immatriculation : {Informations}");
-        return this;
-    }
-
-    public override Document remplit(string informations)
-    {
-        Informations = informations;
         return this;
     }
 }

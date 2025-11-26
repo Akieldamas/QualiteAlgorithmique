@@ -28,5 +28,6 @@ public class LiasseClient : Liasse
     {
         foreach (Document document in documents)
             document.imprime();
+    
     }
 }

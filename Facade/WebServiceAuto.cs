@@ -15,7 +15,7 @@ namespace Facade
             double prixMax = prixMoyen + ecartMax;
             return catalogue.retrouveVehicules(prixMin, prixMax);
         }
-        public string document(int id)X
+        public string document(int id)
         {
             return $"Document avec ID {id} récupéré.";
         }

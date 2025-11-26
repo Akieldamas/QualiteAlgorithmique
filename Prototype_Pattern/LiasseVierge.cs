@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 public class LiasseVierge : Liasse
 {
+    public static LiasseVierge instance = null;
     public static LiasseVierge Instance()
     {
-        return new LiasseVierge();
+        if (instance == null)
+        {
+            instance = new LiasseVierge();
+        }
+        return instance;
     }
 
     public void ajoute(Document doc)
